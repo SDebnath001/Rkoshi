@@ -331,6 +331,43 @@ section {
     list-style-type: none;
 }
 
+/* Service CSS*/
+.service-banner-container {
+    position: relative;
+}
+
+.service-banner-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1em;
+}
+
+#service-page-main .service-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 5em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#service-content h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.service-icons .bi {
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 @media (max-width: 800px) {
     .nav-toggle {
         display: block;
@@ -380,7 +417,7 @@ section {
     } */
 
     .RKOSHI-area {
-        background-color: rgba(0,0,0,0.25);
+        background-color: rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
         width: 100vw;
         height: 100vh;
@@ -541,4 +578,21 @@ section {
         font-size: 4em;
         margin: 1em 0em;
     }
+
+    /*Service CSS*/
+    #service-page-main .service-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3.4em;
+    font-family: "Bebas Neue", sans-serif;
+}
+#service-content h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 2em 1em;
+}
 }

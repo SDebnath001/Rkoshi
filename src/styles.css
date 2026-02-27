@@ -65,7 +65,7 @@
 }
 
 .RKOSHI {
-    background-image: url(/public/imgs/delivery-bg.jpg);
+    background-image: url(../public/imgs/delivery-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -411,7 +411,7 @@ section {
     }
 
     .RKOSHI {
-        background-image: url(/public/imgs/delivery-bg.jpg);
+        background-image: url(../public/imgs/delivery-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fredoka:wdth,wght@75,300..700&family=Great+Vibes&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rkoshi-nav {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.logo {
+    width: 5em;
+    background-color: transparent;
+}
+
+.logo-text h2 {
+    font-size: 1.6em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#navToggle {
+    border: none;
+    padding: 0.3em 0.7em;
+    background-color: #000;
+    color: white;
+    border-radius: 0.6em;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+    margin-left: auto;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    margin: 0em auto;
+}
+
+.nav-items li {
+    list-style-type: none;
+    font-size: 1.7em;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+}
+
+.active {
+    text-decoration: underline;
+    color: #2523a3;
+    font-weight: 700
+}
+
+.RKOSHI {
+    background-image: url(../public/imgs/delivery-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.RKOSHI-area {
+    width: 50%;
+    height: 100%;
+    background-color: #2523a3;
+    position: relative;
+}
+
+.RKOSHI-details {
+    position: absolute;
+    margin: 8em 5em;
+}
+
+.rkoshi-image {
+    width: 10em;
+    background-color: white;
+    border-radius: 1.6em;
+    box-shadow: 15px 18px 5px #00000034;
+}
+
+.RKOSHI-text {
+    color: white;
+    margin-top: 3em;
+}
+
+.RKOSHI-text h1 {
+    font-size: 3em;
+}
+
+.RKOSHI-text h2 {
+    font-size: 2.7em;
+    color: #ffffffad;
+}
+
+.border {
+    border: 2px solid white;
+    margin: 1.3em 0em;
+}
+
+section {
+    padding: 2em 1.8em;
+}
+
+.transporting {
+    position: relative;
+    color: #ffffffe7;
+    padding: 3em 10em;
+    border-radius: 2em;
+    font-size: 2em;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.transporting::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    background: linear-gradient(120deg,
+            #050505,
+            #041024,
+            #0f1181,
+            #03183a,
+            #050505);
+
+    background-size: 300% 300%;
+    animation: waveGradient 10s ease-in-out infinite;
+
+    z-index: 0;
+}
+
+.transporting>* {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes waveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#service,
+#contact {
+    background-color: #ececec;
+}
+
+.why-rkoshi h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.Commitment h2,
+.service h2,
+.about-us h2,
+.contact h2 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 6em;
+    margin: 1em 0em;
+}
+
+.slider {
+    overflow-x: auto;
+    width: 80em;
+    margin: 0em auto;
+    padding: 2em 1em;
+}
+
+.slider-cards {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1.7em;
+}
+
+.slider-cards .card {
+    width: 25em;
+    height: 18em;
+    padding: 1em 0em;
+    box-shadow: 7px 10px 6px #00000034;
+}
+
+.card .card-title {
+    font-weight: 700;
+    color: #2523a3;
+}
+
+.card-text {
+    font-size: 1.2em;
+    color: #3d3d3d;
+}
+
+.card i {
+    font-size: 3em;
+    text-align: center;
+}
+
+.Commitment {
+    margin: 1em auto;
+}
+
+.Commitment-container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.commitment-img {
+    width: 100%;
+    border-radius: 1.5em;
+}
+
+.commitment-img-area {
+    width: 100%;
+}
+
+.col-8 p {
+    font-size: 1.2em;
+}
+
+.commitment-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2em 10em;
+    text-align: justify;
+}
+
+.quote {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.service-head {
+    text-align: center;
+    font-size: 1.2em;
+    width: 70vw;
+    margin: 0em auto;
+}
+
+.service-cards {
+    width: 90vw;
+    margin: 5em auto;
+    padding: 1em;
+}
+
+.service-cards .card {
+    box-shadow: 7px 10px 6px #00000034;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+.service-cards .card:hover {
+    box-shadow: 9px 15px 6px #00000056;
+}
+
+.about-us-content {
+    width: 80vw;
+    margin: 3em auto;
+}
+
+.about-us-content p {
+    font-size: 1.2em;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-list li {
+    list-style-type: none;
+    padding: 0.3em 1.2em;
+    border: 1px solid #dfdfdf;
+    border-radius: 0.6em;
+}
+
+.contact-text {
+    width: 60vw;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.location,
+.free-Quote {
+    width: 70vw;
+    margin: 6em auto;
+    text-align: justify;
+}
+
+#footer {
+    margin: 0em auto;
+    background-color: #000;
+    color: white;
+}
+
+.footer-area {
+    display: grid;
+    grid-template-columns: 6fr 4fr 5fr;
+    padding: 2em 5em;
+}
+
+.phn-num ul li {
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .nav-wrapper.show {
+        display: block;
+    }
+
+    .rkoshi-nav {
+        grid-template-columns: 1fr;
+        padding: 0.3em 0.8em;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-wrapper {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-wrapper.show {
+        display: block;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.6em;
+        padding: 20px 0;
+    }
+
+    .nav-items li {
+        font-size: 1.5em;
+    }
+
+    /* .nav-wrapper .bg-dark {
+        text-align: center !important;
+    } */
+
+    .RKOSHI-area {
+        background-color: #00000000;
+        backdrop-filter: blur(3px);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .rkoshi-image {
+        width: 8em;
+        background-color: white;
+        border-radius: 1em;
+        box-shadow: 15px 18px 5px #00000034;
+    }
+
+    .RKOSHI-text {
+        color: white;
+    }
+
+    .RKOSHI-text h1 {
+        font-size: 1.6em;
+    }
+
+    .RKOSHI-text h2 {
+        font-size: 2.4em;
+        color: #ffffffad;
+    }
+
+    .RKOSHI-details {
+        position: absolute;
+    }
+
+    .RKOSHI {
+        background-image: url(./public/imgs/delivery-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+
+    section {
+        padding: 0em;
+    }
+
+    .transporting {
+        background-color: black;
+        color: #ffffffe1;
+        padding: 3em 1.3em;
+        font-size: 1.3em;
+        text-align: justify;
+        border-radius: 0em;
+    }
+
+    .why-rkoshi h2 {
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 1.5em;
+    }
+
+    .slider {
+        overflow-x: auto;
+        width: 100vw;
+        margin: 0em auto;
+        padding: 1em;
+    }
+
+    .slider-cards {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .slider-cards .card {
+        width: 20em;
+        padding: 1em 0em;
+        box-shadow: 7px 10px 6px #00000034;
+    }
+
+    .Commitment {
+        width: 90%;
+        margin: 0em auto;
+    }
+
+    .Commitment-container {
+        display: block;
+    }
+
+    .commitment-img {
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    .commitment-img-area {
+        width: 100%;
+    }
+
+    .commitment-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 1em;
+        text-align: justify;
+    }
+
+    .service-head {
+        text-align: center;
+        font-size: 1.2em;
+        width: 90vw;
+        text-align: justify;
+        margin: 0em auto;
+    }
+
+    .service h2 {
+        text-align: center;
+        font-size: 2em;
+        margin: 1.5em 0em;
+        padding-top: 1em;
+    }
+
+    .service-cards {
+        width: 100vw;
+        margin: 5em auto;
+        padding: 0em;
+    }
+
+    .contact-text {
+        width: 90vw;
+        margin: 1em auto;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .location,
+    .free-Quote {
+        width: 90vw;
+        margin: 3em auto;
+    }
+
+    .footer-area {
+        display: block;
+        padding: 1em 3em;
+    }
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        padding-left: 0rem;
+    }
+
+    .Commitment h2,
+    .service h2,
+    .about-us h2,
+    .contact h2 {
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+        font-size: 4em;
+        margin: 1em 0em;
+    }
+}

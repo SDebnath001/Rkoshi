@@ -49,7 +49,7 @@
 
 .nav-items li {
     list-style-type: none;
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .nav-items a {
@@ -111,16 +111,16 @@
 }
 
 section {
-    padding: 2em 1.8em;
+    padding: 1em 1.8em;
 }
 
 .transporting {
     position: relative;
     color: #ffffffe7;
-    padding: 3em 10em;
+    padding: 3em 2em;
     border-radius: 2em;
     font-size: 2em;
-    text-align: justify;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -179,7 +179,7 @@ section {
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
     font-size: 6em;
-    margin: 1em 0em;
+    margin: 0.2em 0em;
 }
 
 .slider {
@@ -228,7 +228,7 @@ section {
 }
 
 .commitment-img {
-    width: 100%;
+    width: 80%;
     border-radius: 1.5em;
 }
 
@@ -246,8 +246,8 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 2em 10em;
-    text-align: justify;
+    padding: 2em 5em;
+    font-size: 1.2em;
 }
 
 .quote {
@@ -305,14 +305,12 @@ section {
     margin: 1em auto;
     text-align: center;
     font-size: 1.4em;
-    text-align: justify;
 }
 
 .location,
 .free-Quote {
     width: 70vw;
     margin: 6em auto;
-    text-align: justify;
 }
 
 #footer {
@@ -465,7 +463,6 @@ section {
         color: #ffffffe1;
         padding: 3em 1.3em;
         font-size: 1.3em;
-        text-align: justify;
         border-radius: 0em;
     }
 
@@ -527,7 +524,6 @@ section {
         text-align: center;
         font-size: 1.2em;
         width: 90vw;
-        text-align: justify;
         margin: 0em auto;
     }
 
@@ -581,18 +577,19 @@ section {
 
     /*Service CSS*/
     #service-page-main .service-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 3.4em;
-    font-family: "Bebas Neue", sans-serif;
-}
-#service-content h2 {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.1em;
-    text-align: center;
-    margin: 2em 1em;
-}
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 3.4em;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    #service-content h2 {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+        margin: 2em 1em;
+    }
 }

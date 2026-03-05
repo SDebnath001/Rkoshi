@@ -330,15 +330,18 @@ section {
 }
 
 /* Service CSS*/
-.service-banner-container {
+.service-banner-container,
+.about-banner-container {
     position: relative;
 }
 
-#service-page-main {
+#service-page-main,
+#about-page-main {
     position: relative;
 }
 
-.service-banner-img {
+.service-banner-img,
+.About-banner-img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
@@ -353,6 +356,16 @@ section {
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 5em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#about-page-main .about-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 9em;
     font-family: "Bebas Neue", sans-serif;
 }
 

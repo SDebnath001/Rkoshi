@@ -305,9 +305,10 @@ section {
 }
 
 .location,
-.free-Quote {
+.free-Quote,
+.business {
     width: 70vw;
-    margin: 6em auto;
+    margin: 5em auto;
 }
 
 #footer {
@@ -328,17 +329,20 @@ section {
 
 /* Service CSS*/
 .service-banner-container,
-.about-banner-container {
+.about-banner-container,
+.map-banner-container {
     position: relative;
 }
 
 #service-page-main,
-#about-page-main {
+#about-page-main,
+#map-page-main {
     position: relative;
 }
 
 .service-banner-img,
-.About-banner-img {
+.About-banner-img,
+.map-banner-img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
@@ -354,9 +358,11 @@ section {
     color: #fff;
     font-size: 5em;
     font-family: "Bebas Neue", sans-serif;
+    -webkit-text-stroke: 2px black;
 }
 
-#about-page-main .about-heading {
+#about-page-main .about-heading,
+#map-page-main .map-heading {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -364,6 +370,7 @@ section {
     color: #fff;
     font-size: 9em;
     font-family: "Bebas Neue", sans-serif;
+    -webkit-text-stroke: 2px black;
 }
 
 #service-content h2 {
@@ -381,7 +388,8 @@ section {
 }
 
 /*About CSS*/
-.who-we-are {
+.who-we-are,
+.contact-content {
     max-width: 80vw;
     margin: 3em auto;
 }
@@ -618,13 +626,15 @@ section {
     }
 
     /*About CSS*/
-    .who-we-are {
+    .who-we-are,
+    .contact-content {
         max-width: 95vw;
         margin: 3em auto;
     }
 
     .service-banner-img,
-    .About-banner-img {
+    .About-banner-img,
+    .map-banner-img {
         width: 100%;
         height: 70vh;
         object-fit: cover;
@@ -632,7 +642,8 @@ section {
         border-radius: 0em;
     }
 
-    #about-page-main .about-heading {
+    #about-page-main .about-heading,
+    #map-page-main .map-heading {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -640,5 +651,12 @@ section {
         color: #fff;
         font-size: 4em;
         font-family: "Bebas Neue", sans-serif;
+    }
+
+    .location,
+    .free-Quote,
+    .business {
+        width: 95vw;
+        margin: 4em auto;
     }
 }
